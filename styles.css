@@ -7,8 +7,9 @@
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 32px;
 }
 
 nav {
@@ -16,24 +17,30 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    width: 100%;
 }
 
 a {
     text-decoration: none;
 }
 
+.purple {
+    color: rgb(100 21 255);;
+}
+
 /* NAVIGATION BAR */
 
 .logo {
     width: 100%;
-    max-width: 40px;
+    max-width: 48px;
     height: 100%;
-    max-height: 40px;
+    max-height: 48px;
     padding-right: 12px;
 }
 
 .logo__link {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 900;
     display: flex;
     justify-content: center;
@@ -53,7 +60,8 @@ a {
 }
 
 .nav__link {
-    font-weight: 900;
+    font-weight: 500;
+    font-family: roboto, sans-serif;
     color: black;
 }
 
@@ -63,8 +71,14 @@ a {
 
 .nav__button {
     height: 40px;
-    width: 80px;
-    border-radius: 20px;
+    width: 100px;
+    border-radius: 999px;
     background-color: rgb(100 21 255);
     border: none;
+}
+
+/* LANDING */
+
+.landing__wrapper {
+    display: flex;
 }
