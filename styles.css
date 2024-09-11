@@ -49,6 +49,7 @@ a {
 
 .figure__wrapper {
     max-width: 150px;
+    margin-left: 0;
 }
 
 .link__wrapper {
@@ -89,6 +90,7 @@ a {
     max-height: 100px;
     width: 100%;
     height: 100%;
+    filter: grayscale(1);
 }
 
 .landing__computer--image {
