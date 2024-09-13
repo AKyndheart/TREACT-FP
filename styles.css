@@ -33,6 +33,12 @@ h1 {
     font-size: 52px;
 }
 
+h2 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
 h3 {
     opacity: .7;
 }
@@ -185,6 +191,10 @@ i {
     margin-left: 100px;
 }
 
+.features__heading {
+    font-size: 20px;
+}
+
 .features__image {
     display: flex;
     flex-wrap: wrap;
@@ -310,4 +320,60 @@ i {
     padding-right: 16px;
     opacity: .3;
     font-weight: 700;
+}
+
+/* VALUES */
+
+.values__wrapper {
+    display: flex;
+}
+
+.values__description {
+    width: 50%;
+}
+
+.values__sub-para--wrapper {
+    display: flex;
+}
+
+.values__affordable--heading {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.values__affordable--image {
+    width: 32px;
+    height: 32px;
+    border: 2px solid rgb(132, 238, 169);
+    border-radius: 999px;
+    background-color: rgb(154 230 180);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 8px 0 0;
+}
+
+.values__dollar-sign {
+    width: 35%;
+    height: 50%;
+    color: rgb(33, 49, 38);
+}
+
+.values__professionalism--heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.values__image--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.values__development-image {
+    max-width: 600px;
+    max-height: 600px;
 }
