@@ -7,9 +7,8 @@
 
 .row {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 32px;
 }
 
 nav {
@@ -194,12 +193,18 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1200px;
     margin-left: 100px;
+    padding: 80px 0;
 }
 
 .features__heading {
     font-size: 20px;
+    margin: 0;
+}
+
+.features__h1 {
+    margin: 16px 0 0 0;
 }
 
 .features__image {
@@ -211,8 +216,7 @@ i {
 
 .features__images {
     display: flex;
-    width: 100%;
-    max-width: 33%;
+    width: calc(100%/3);
     padding: 32px;
 }
 
@@ -244,6 +248,14 @@ i {
 .quality__wrapper {
     display: flex;
     padding: 96px 0;
+}
+
+.quality__description--wrapper {
+    width: 50%;
+}
+
+.quality__image--wrapper {
+    width: 50%;
 }
 
 .quality__title {
@@ -289,7 +301,7 @@ i {
 .quality__image {
     max-width: 600px;
     max-height: 600px;
-    border: 1px solid rgb(160 174 192);
+    border: 1px solid rgb(195, 205, 218);
     border-radius: 4px;
 }
 
@@ -303,6 +315,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50%;
 }
 
 .steps__image {
@@ -441,6 +454,7 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .pricing__boxes {
