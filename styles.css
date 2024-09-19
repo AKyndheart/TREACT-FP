@@ -4,6 +4,12 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+footer {
+    margin: 0;
+    width: 100%;
+}
+
 body {
     margin: 0;
 }
@@ -124,11 +130,14 @@ i {
     border: none;
 }
 
+
 /* LANDING */
 
 #landing {
     padding: 96px 0;
+    animation: slide-right 800ms ease;
 }
+
 
 .landing__wrapper {
     display: flex;
@@ -136,7 +145,7 @@ i {
 
 .landing__logos {
     max-width: 100px;
-    max-height: 100px;
+    max-height: 70px;
     width: 100%;
     height: 100%;
     filter: grayscale(1);
@@ -184,7 +193,12 @@ i {
     border-width: 2px;
     font-family: inherit;
     font-size: 16px;
-    }
+    transition: all 300ms ease;
+}
+
+.text__box:hover {
+    border-color: rgb(62, 64, 67);
+}
 
 .get__started {
     border: none;
@@ -196,16 +210,28 @@ i {
     top: 8px;
     height: 40px;
     width: 160px;
+    transition: all 300ms ease;
+}
+
+.get__started:hover {
+    background-color: rgb(84, 17, 219);
+    cursor: pointer;
 }
 
 .landing__computer--wrapper {
     width: 60%;
 }
 
+
 /* FEATURES */
 
 #features {
     padding: 96px 0;
+    animation: slide-left 800ms ease;
+}
+
+#features: {
+    animation: slide-left 800ms ease;
 }
 
 .feature__wrapper {
@@ -266,6 +292,7 @@ i {
 
 #quality {
     padding: 96px 0;
+    animation: slide-right 800ms ease;
 }
 
 .quality__wrapper {
@@ -331,6 +358,7 @@ i {
 
 #steps {
     padding: 96px 0;
+    animation: slide-left 800ms ease;
 }
 
 .steps__wrapper {
@@ -372,6 +400,7 @@ i {
 
 #values {
     padding: 96px 0;
+    animation: slide-right 800ms ease;
 }
 
 .values__wrapper {
@@ -460,6 +489,7 @@ i {
 
 #pricing {
     padding: 96px 0;
+    animation: slide-left 800ms ease;
 }
 
 .pricing__description--wrapper {
@@ -678,6 +708,10 @@ i {
 
 /* CONTACT */
 
+#contact {
+    animation: slide-right 800ms ease;
+}
+
 .contact__wrapper {
     display: flex;
     justify-content: center;
@@ -755,6 +789,7 @@ i {
     background-color: rgb(100 21 255);
     height: 522px;
     width: 100%;
+    animation: slide-left 800ms ease;
 }
 
 .footer__background--wrapper {
@@ -900,4 +935,14 @@ i {
     height: 30px;
     width: 30px;
     border-radius: 999px;
+}
+
+@keyframes slide-right {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+
+@keyframes slide-left {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(0%);}
 }
