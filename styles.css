@@ -73,6 +73,10 @@ i {
 
 /* NAVIGATION BAR */
 
+#nav {
+    margin: 0 8px;
+}
+
 .nav__container {
     display: flex;
     flex-wrap: nowrap;
@@ -135,6 +139,7 @@ i {
 
 #landing {
     padding: 96px 0;
+    margin: 0 8px;
     animation: slide-right 800ms ease;
 }
 
@@ -227,6 +232,7 @@ i {
 
 #features {
     padding: 96px 0;
+    margin: 0 8px;
     animation: slide-left 800ms ease;
 }
 
@@ -292,6 +298,7 @@ i {
 
 #quality {
     padding: 96px 0;
+    margin: 0 8px;
     animation: slide-right 800ms ease;
 }
 
@@ -358,6 +365,7 @@ i {
 
 #steps {
     padding: 96px 0;
+    margin: 0 8px;
     animation: slide-left 800ms ease;
 }
 
@@ -400,6 +408,7 @@ i {
 
 #values {
     padding: 96px 0;
+    margin: 0 8px;
     animation: slide-right 800ms ease;
 }
 
@@ -489,6 +498,7 @@ i {
 
 #pricing {
     padding: 96px 0;
+    margin: 0 8px;
     animation: slide-left 800ms ease;
 }
 
@@ -709,6 +719,7 @@ i {
 /* CONTACT */
 
 #contact {
+    margin: 0 8px;
     animation: slide-right 800ms ease;
 }
 
@@ -733,7 +744,6 @@ i {
     display: flex;
     justify-content: left;
     align-items: center;
-    /* padding-left: 80px; */
 }
 
 .contact__button--wrapper {
@@ -936,6 +946,8 @@ i {
     width: 30px;
     border-radius: 999px;
 }
+
+/* ANIMATION KEY FRAMES */
 
 @keyframes slide-right {
     0% {transform: translateX(-100%);}
