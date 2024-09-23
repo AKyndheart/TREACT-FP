@@ -12,6 +12,7 @@ footer {
 
 body {
     margin: 0;
+    /* overflow-x: hidden; */
 }
 
 .container {
@@ -139,7 +140,7 @@ i {
 
 #landing {
     padding: 96px 0;
-    margin: 0 8px;
+    margin: 0 16px;
     animation: slide-right 800ms ease;
 }
 
@@ -158,7 +159,7 @@ i {
 
 .landing__computer--image {
     width: 100%;
-    height: 368px;
+    height: auto;
 }
 
 .landing__description {
@@ -232,12 +233,21 @@ i {
 
 #features {
     padding: 96px 0;
-    margin: 0 8px;
+    margin: 0 16px;
     animation: slide-left 800ms ease;
+    position: relative;
 }
 
-#features: {
-    animation: slide-left 800ms ease;
+
+.blob__img {
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    bottom: 0px;
+    right: -170px;
+    z-index: 1;
+    color: rgb(198, 137, 165);
+    background-color: rgb(198, 137, 165);
 }
 
 .feature__wrapper {
@@ -247,6 +257,7 @@ i {
     max-width: 1200px;
     margin-left: 100px;
     padding: 80px 0;
+    z-index: 2;
 }
 
 .features__heading {
@@ -292,14 +303,16 @@ i {
 
 .features__description {
     padding-left:16px;
+    z-index: 2;
 }
 
 /* QUALITY */
 
 #quality {
     padding: 96px 0;
-    margin: 0 8px;
+    margin: 0 16px;
     animation: slide-right 800ms ease;
+    z-index: 2;
 }
 
 .quality__wrapper {
@@ -352,6 +365,8 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 .quality__image {
@@ -359,6 +374,17 @@ i {
     max-height: 600px;
     border: 1px solid rgb(195, 205, 218);
     border-radius: 4px;
+    position: relative;
+    z-index: 2;
+}
+
+.dot {
+    width: 100px;
+    position: absolute;
+    bottom: -20px;
+    right: -60px;
+    z-index: 1;
+    background-color: white;
 }
 
 /* STEPS */
@@ -408,7 +434,7 @@ i {
 
 #values {
     padding: 96px 0;
-    margin: 0 8px;
+    margin: 0 16px;
     animation: slide-right 800ms ease;
 }
 
@@ -498,7 +524,7 @@ i {
 
 #pricing {
     padding: 96px 0;
-    margin: 0 8px;
+    margin: 0 16px;
     animation: slide-left 800ms ease;
 }
 
@@ -957,4 +983,12 @@ i {
 @keyframes slide-left {
     0% {transform: translateX(100%);}
     100% {transform: translateX(0%);}
+}
+
+/* 1280px */
+
+@media(max-width:1280px) {
+    .landing__title {font-size: 36px;}
+    .landing__para {font-size: 16px;}
+    .landing__computer--image {height: 368px;}
 }
