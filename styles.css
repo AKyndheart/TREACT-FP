@@ -143,6 +143,7 @@ margin: 0px 16px;
     right: 20px;
     border: none;
     background-color: white;
+    display: none;
 }
 
 .fa-solid {
@@ -1165,6 +1166,7 @@ margin: 0px 16px;
     .logo__wrapper {width: 100%;display: flex;justify-content: center;}
     .landing__logos {scale: .8;}
     .pricing__boxes {width: 50%;}
+    .nav__menu {display: block;}
 }
 
 @media(max-width:768px) {
