@@ -11,6 +11,7 @@ footer {
 }
 
 body {
+    position: relative;
     margin: 0;
     /* overflow-x: hidden; */
 }
@@ -140,16 +141,20 @@ margin: 0px 16px;
 .nav__menu {
     position: absolute;
     right: 20px;
+    border: none;
+    background-color: white;
 }
 
-.nav__burger {
+.fa-solid {
     width: 30px;
     color: #000000;
     display: none;
-    cursor: not-allowed;
+    scale: 1.5;
+    cursor: pointer;
+    padding: 0;
 }
 
-.nav__burger:hover {
+.fa-solid:hover {
     color: #7640c1;
 }
 
@@ -957,8 +962,9 @@ margin: 0px 16px;
 .footer__line {
     border: 1px solid rgb(116 44 255);
     height: 0px;
-    width: 1200px;
+    width: 95%;
     margin: 64px 0;
+    align-self: center;
 }
 
 .footer__copyright {
@@ -1044,6 +1050,73 @@ margin: 0px 16px;
     border-radius: 999px;
 }
 
+/* BURGER */
+
+#menu {
+    position: absolute;
+    width: 100%;
+    height: 7%;
+    border: 1px solid rgb(204, 197, 197);
+    top: 0px;
+    background-color: white;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.menu__link--wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.menu__link {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: roboto, sans-serif;
+}
+
+.menu__button {
+    height: 60px;
+    width: 200px;
+    border-radius: 999px;
+    background-color: rgb(100 21 255);
+    border: none;
+    font-size: 20px;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+}
+
+.menu__link--white {
+    color: white;
+    padding: 16px 56px;
+}
+
+.menu__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background-color: white;
+    transition: all 300ms ease;
+}
+
+.menu__close:hover {
+    color: #7640c1;
+}
+
+.menu--open #menu {
+    display: flex;
+    justify-content: center;
+    visibility: visible;
+    opacity: 1;
+}
+
 /* ANIMATION KEY FRAMES */
 
 @keyframes slide-right {
@@ -1088,7 +1161,7 @@ margin: 0px 16px;
     .footer__copyright {margin: 0 24px;}
     .footer__copyright--social-list {justify-content: space-between;width: 100px;}
     .link__wrapper {display: none;}
-    .nav__burger {display: block;}
+    .fa-solid {display: block;}
     .logo__wrapper {width: 100%;display: flex;justify-content: center;}
     .landing__logos {scale: .8;}
     .pricing__boxes {width: 50%;}

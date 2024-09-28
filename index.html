@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/b1537981f4.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section class="nav">
@@ -33,9 +34,9 @@
                 <a href="" class="nav__link--white">Sign Up</a>
               </button>
             </div>
-            <div class="nav__menu">
-              <img src="./Assets/Hamburger_icon.svg (1).png" alt="" class="nav__burger">
-            </div>
+            <button class="nav__menu" onclick="openMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -451,7 +452,6 @@
         </div>
       </div>
     </section>
-
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -586,6 +586,21 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="menu">
+        <div class="menu__link--wrapper">
+          <a href="" class="menu__link" onclick="closeMenu()">About</a>
+          <a href="" class="menu__link" onclick="closeMenu()">Blog</a>
+          <a href="" class="menu__link" onclick="closeMenu()">Pricing</a>
+          <a href="" class="menu__link" onclick="closeMenu()">Contact Us</a>
+          <a href="" class="menu__link" onclick="closeMenu()">Login</a>
+          <button class="menu__button">
+            <a href="" class="menu__link--white" onclick="closeMenu()">Sign Up</a>
+          </button>
+          <button class="menu__close">
+            <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+          </button>
         </div>
       </section>
   </body>
